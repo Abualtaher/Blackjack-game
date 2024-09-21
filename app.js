@@ -1,17 +1,18 @@
 let firstCard = 12;
-let secondCard = 9;
-
+let secondCard = 8;
 let sum = firstCard + secondCard;
-
 let hasBlackJack = false;
 let isAlive = true;
+let message = "";
 
 if (sum < 21) {
-  console.log("You aer in the clear");
+  message = "You aer in the clear";
 } else if (sum === 21) {
-  console.log("You win!!!");
+  message = "You win!!!";
   hasBlackJack = true;
 } else {
-  console.log("You lose!");
+  message = "You lose!";
   isAlive = false;
 }
+
+console.log(message);
