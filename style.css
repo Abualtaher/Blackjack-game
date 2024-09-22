@@ -1,3 +1,21 @@
+body {
+  background-image: url(img/poker-1264076_1280.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+#containar {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 h1 {
   color: brown;
+  margin: 0;
 }
