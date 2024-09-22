@@ -8,8 +8,6 @@ body {
   box-sizing: border-box;
 }
 #containar {
-  display: flex;
-  flex-direction: column;
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -18,4 +16,10 @@ body {
 h1 {
   color: brown;
   margin: 0;
+}
+
+button {
+  width: 150px;
+  border-radius: 5px;
+  background-color: rgb(239, 174, 36);
 }
