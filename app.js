@@ -1,7 +1,6 @@
 let firstCard = 12;
 let secondCard = 23;
-let therdCard = 4;
-let card = [firstCard, secondCard, therdCard];
+let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -14,6 +13,8 @@ function startGame() {
   renderGame();
 }
 function renderGame() {
+  sumEl.textContent = "Sum: " + sum;
+  cardEl.textContent = "Card : " + cards[0] + " | " + cards[1];
   if (sum < 21) {
     message = "You aer in the clear";
   } else if (sum === 21) {
@@ -24,12 +25,11 @@ function renderGame() {
     isAlive = false;
   }
   messageEl.textContent = message;
-  sumEl.textContent = "Sum: " + sum;
-  cardEl.textContent = "Card : " + card[0] + " | " + card[1];
 }
 
 function newCard() {
-  sum += card[2];
+  let card = 6;
+  sum += card;
+  cards.push(card);
   renderGame();
-  cardEl.textContent += " | " + card[2];
 }
