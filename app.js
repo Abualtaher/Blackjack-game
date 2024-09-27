@@ -13,8 +13,11 @@ function startGame() {
   renderGame();
 }
 function renderGame() {
+  cardEl.textContent = "Cards: ";
+  for (let i = 0; i < cards.length; i++) {
+    cardEl.textContent += cards[i] + " ";
+  }
   sumEl.textContent = "Sum: " + sum;
-  cardEl.textContent = "Card : " + cards[0] + " | " + cards[1];
   if (sum < 21) {
     message = "You aer in the clear";
   } else if (sum === 21) {
