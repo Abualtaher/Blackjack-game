@@ -15,7 +15,7 @@ function myWins(chips) {
   let player = {
     chips: 10,
   };
-  return (playerEl.textContent = "Your wins are: $" + player.chips);
+  return (playerEl.textContent = "You win: $" + player.chips);
 }
 
 function getRandomCard() {
